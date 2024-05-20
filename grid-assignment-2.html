@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Featured" style="grid-area: Featured">
+        Featured Merchandising
+      </div>
+      <div class="header" style="grid-area: header">header</div>
+      <div class="Sidebar" style="grid-area: Sidebar">Sidebar</div>
+      <div class="Products" style="grid-area: Products">Products</div>
+      <div class="Feature2" style="grid-area: Feature2">Feature2</div>
+      <div class="Feature3" style="grid-area: Feature3">Feature3</div>
+      <div class="Bonus1" style="grid-area: Bonus1">Bonus1</div>
+      <div class="Bonus2" style="grid-area: Bonus2">Bonus2</div>
+      <div class="Bonus3" style="grid-area: Bonus3">Bonus3</div>
+      <div class="Bonus4" style="grid-area: Bonus4">Bonus4</div>
+      <div class="Footer" style="grid-area: Footer">Footer</div>
+    </div>
+  </body>
+  <style>
+    .container {
+      height: 500px;
+      border: 2px solid black;
+      display: grid;
+      grid-template-areas:
+        "Featured Featured Featured header header header"
+        "Sidebar Products Products Products Products Feature2"
+        "Sidebar Products Products Products Products ."
+        "Sidebar Bonus1 . . Bonus3 Feature3"
+        "Sidebar . Bonus2 . . Bonus4"
+        "Sidebar Footer Footer Footer Footer Footer";
+        gap: 5px;
+        text-align: center;
+        color: white;
+
+    }
+    .Featured,
+    .Feature2,
+    .Feature3 {
+      background-color: #aa0100;
+    }
+    .Footer {
+      background-color: #ffa502;
+    }
+    .Products {
+      background-color: #0300aa;
+    }
+    .header{
+      background-color: rgb(0, 0, 0);
+    }
+    .Sidebar {
+      background-color: #00aa01;
+    }
+    .Bonus1,
+    .Bonus2,
+    .Bonus3,
+    .Bonus4 {
+      background-color: #ffc0cb;
+    }
+  </style>
+</html>

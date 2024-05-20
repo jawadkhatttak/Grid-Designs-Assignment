@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid Assignment 1</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: grid;
+        height:  500px;
+        /* grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto; */
+        grid-template-areas: "one one one one one one"
+        "two three four four four five"
+        "six seven four four four five"
+        "six eight nine ten eleven eleven";
+        
+    }
+    .item1, .item3 , .item7, .item11{
+        background-color: #00E4AC;
+    }
+    .item2, .item5, .item6{
+        background-color: #608FE9;
+    }
+    .item4, .item8 , .item9 , .item10{
+        background-color: #FF404C;
+    }
+    .item{
+        border: 2px solid black;
+    }
+    .item1{
+        /* grid-column: 1/2;
+        grid-row: 1/7; */
+        grid-area: one;
+    }
+    .item2{
+        grid-area: two;
+        /* grid-column: 2/3;
+        grid-row: 1/2; */
+    }
+    .item3{
+        grid-area: three;
+        /* grid-column: 2/3;
+        grid-row: 2/3; */
+    }
+    .item4{
+        grid-area: four;
+        /* grid-column: 2/4;
+        grid-row: 3/6; */
+    }
+    .item5{
+        grid-area: five;
+        /* grid-column: 2/4;
+        grid-row: 6/7; */
+    }
+    .item6{
+        grid-area: six;
+        /* grid-column: 2/4;
+        grid-row: 1/2; */
+    }
+    .item7{
+        grid-area: seven;
+        /* grid-column: 3/4;
+        grid-row: 2/3; */
+    }
+    .item8{
+        grid-area: eight;
+        /* grid-column: 4/5;
+        grid-row: 2/3; */
+    }
+    .item9{
+        grid-area: nine;
+        /* grid-column: 4/5;
+        grid-row: 3/4; */
+    }
+    .item10{
+        grid-area: ten;
+        /* grid-column: 4/5;
+        grid-row: 4/5; */
+    }
+    .item11{
+        grid-area: eleven;
+        /* grid-column: 4/5;
+        grid-row: 5/7; */
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+        <div class="item3 item"></div>
+        <div class="item4 item"></div>
+        <div class="item5 item"></div>
+        <div class="item6 item"></div>
+        <div class="item7 item"></div>
+        <div class="item8 item"></div>
+        <div class="item9 item"></div>
+        <div class="item10 item"></div>
+        <div class="item11 item"></div>
+    </div>
+</body>
+</html>
